@@ -1,2 +1,10 @@
-SELECT emp_no, last_name, first_name,gender
-FROM employees; 
+SELECT 
+	employees.emp_no, 
+	employees.last_name, 
+	employees.first_name, 
+	employees.gender, 
+	salaries.salary
+FROM employees
+LEFT JOIN salaries
+on employees.emp_no = salaries.emp_no; 
+
