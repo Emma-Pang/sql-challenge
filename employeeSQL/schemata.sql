@@ -40,7 +40,7 @@ CREATE TABLE dept_emp(
   from_date DATE,
   to_date DATE
 );
-DROP TABLE dept_emp;
+
 
 SELECT * FROM employees LIMIT 100;
 SELECT * FROM dept_manager LIMIT 100;
